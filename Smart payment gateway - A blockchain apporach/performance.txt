@@ -1,0 +1,10 @@
+ ---PERFORMANCE METRICS--- 
+Time taken to create account: 5.211790323257446
+Time taken to create account: 3.7925240993499756
+Time taken to send eth: 0.11619806289672852
+Time taken for qr generation: 2.0671088695526123
+Time taken for qr generation: 1.7424325942993164
+Time taken to check balance: 0.018568992614746094
+Time taken to send eth: 0.05169081687927246
+Time taken for qr generation: 0.023211240768432617
+Time taken to check balance: 0.016776561737060547

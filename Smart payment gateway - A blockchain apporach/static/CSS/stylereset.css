@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background-image: url("block.png");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.main {
+    width: 350px;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+form input[type="password"] {
+    width: 80%;
+    height: 40px;
+    background: #e0dede;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 80%;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: block;
+    color: #fff;
+    background: #f59212f6;
+    font-size: 1em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #6d44b8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    color: #fff;
+    font-size: 1em;
+    margin-top: 10px;
+}

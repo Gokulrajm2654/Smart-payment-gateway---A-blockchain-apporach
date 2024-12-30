@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Jost', sans-serif;
+  background-image: url("block.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#intro {
+  color: white;
+  margin-bottom: 20px;
+  /* Added margin for space above buttons */
+}
+
+.button-container {
+  display: flex;
+  /* Use Flexbox */
+  justify-content: center;
+  /* Center buttons */
+  gap: 20px;
+  /* Space between buttons */
+  flex-wrap: wrap;
+  /* Allow buttons to wrap on smaller screens */
+}
+
+.button-64 {
+  align-items: center;
+  background-color: orange;
+  /* Set button color to orange */
+  border: none;
+  /* Remove default border */
+  border-radius: 8px;
+  box-shadow: rgba(233, 146, 47, 0.89) 0 15px 30px -5px;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  width: 200px;
+  /* Fixed width */
+  padding: 10px;
+  /* Added padding for better appearance */
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 50px;
+  /* Smooth background transition */
+}
+
+.button-64:hover {
+  background-color: #6d44b8;
+  /* Change color on hover (a lighter orange) */
+}
+
+.button-48 {
+  appearance: none;
+  background-color: orange;
+  /* Set button color to orange */
+  border: none;
+  /* Ensure border is removed */
+  border-radius: 8px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.7em 1.3em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  margin-top: 30px;
+  /* Smooth background transition */
+}
+
+.button-48:hover {
+  background-color: #6d44b8;
+  /* Change color on hover (a lighter orange) */
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}

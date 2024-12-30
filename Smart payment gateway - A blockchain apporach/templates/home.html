@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="static/CSS/"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleHome.css') }}">
+
+    <script>
+        var privateKeyVisible = false;
+
+        function togglePrivateKey() {
+            var privateKeyElement = document.getElementById('private-key');
+            var btnElement = document.getElementById('showbtn');
+
+            if (privateKeyVisible) {
+                privateKeyElement.style.display = 'none';
+                privateKeyVisible = false;
+                btnElement.innerHTML = 'show';
+            } else {
+                privateKeyElement.style.display = 'inline';
+                privateKeyVisible = true;
+                btnElement.innerHTML = 'hide';
+            }
+        }
+    </script>
+    <script src="{{url_for('static', filename='script/index.js')}}"> </script>
+    <script src="{{url_for('static', filename='script/metamask-onboarding.bundle.js')}}"> </script>
+
+</head>
+
+<body>
+    <div id="intro">
+        <h1>Hello {{ user }}</h1>
+        <div>Your Account Address: {{ address }}</div>
+        Your Private Key:
+        <span id="private-key" style="display: none;">{{ privateKey }}</span><br>
+        <button class="button-48" role="button" onclick="togglePrivateKey()" id="showbtn"><span
+                class="text">show</span></button><br>
+    </div>
+    <br>
+
+    <div class="button-container">
+        <button id="connectWallet" class="button-64"><span id="connectWalletBtn" class="text">Connect To
+                Wallet</span></button>
+
+        <form method="post" action="sendEth">
+            <input type="hidden" name="username" value="{{ user }}">
+            <button id="b1" class="button-64"><span class="text">Send Ethereum</span></button>
+        </form>
+
+        <form method="post" action="receiveEth">
+            <input type="hidden" name="username" value="{{ user }}">
+            <button class="button-64"><span class="text">Receive Ethereum</span></button>
+        </form>
+
+        <form method="post" action="checkBalance">
+            <input type="hidden" name="username" value="{{ user }}">
+            <button class="button-64"><span class="text">Check Balance</span></button>
+        </form>
+
+        <form action="/">
+            <button class="button-64" role="button"><span class="text">Logout</span></button>
+        </form>
+    </div>
+</body>
+
+
+</html>
